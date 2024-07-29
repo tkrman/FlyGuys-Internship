@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "SisenseDashboards", "SisenseDashboards\SisenseDashboards.njsproj", "{EA5F7950-D2C0-4D6D-8838-3CCC1E42B521}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA5F7950-D2C0-4D6D-8838-3CCC1E42B521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA5F7950-D2C0-4D6D-8838-3CCC1E42B521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA5F7950-D2C0-4D6D-8838-3CCC1E42B521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA5F7950-D2C0-4D6D-8838-3CCC1E42B521}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7DCD0F8-1E27-45E7-845E-35FE41C6C84F}
+	EndGlobalSection
+EndGlobal

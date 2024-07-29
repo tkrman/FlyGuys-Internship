@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #dashboardSelect {
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        #dashboardLinks {
+            margin-top: 20px;
+        }
+
+        .link-item {
+            margin-bottom: 10px;
+        }
+
+            .link-item p {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+        .edit-delete {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+            .edit-delete button {
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+
+        #addLinkContainer {
+            margin-top: 20px;
+        }
+
+            #addLinkContainer input[type="text"] {
+                padding: 5px;
+                width: 300px;
+                margin-right: 10px;
+            }
+
+            #addLinkContainer button {
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    <h1>Select a Dashboard:</h1>
+    <select id="dashboardSelect" onchange="fetchLinks()">
+        <option value="idle_report">Idle Reports</option>
+        <option value="mission_coordination">Mission Coordination</option>
+        <option value="mission_summary">Mission Summary</option>
+        <option value="pilot_sourcing">Pilot Sourcing</option><!-- comment -->
+        <option value="qaqc">QA/QC</option>
+
+    </select>
+
+    <div id="dashboardLinks">
+        <!-- Links will be populated here based on selection -->
+    </div>
+
+    <div id="addLinkContainer">
+        <input type="text" id="newLinkInput" placeholder="Enter new URL">
+        <button onclick="addLink()">Add</button>
+    </div>
+
+    <script src="/javascripts/settings.js"></script>
+    
+</body>
+</html>

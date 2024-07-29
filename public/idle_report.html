@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Sisense Dashboard / Idle Report</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe width="100%" frameborder="0" src="" id="dashboardFrame"></iframe>
+    <script>
+        async function loadDashboard() {
+            //console.log("loadDashboard() called!");
+            try {
+                const response = await fetch('/data/idle_report'); // Specify section here
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                //console.log("fetch(/data/idle_report) called!");
+                const data = await response.json();
+                const links = data.links || []; // Adjust to match the structure in YAML
+                const refreshTime = data.refresh || 60000; // Default to 1 minute if not provided
+                let currentIndex = 0;
+                //console.log("response obtained!");
+                //console.log(links);
+
+                function updateIframe() {
+                    //console.log("updateIframe() called!");
+                    if (links.length > 0) {
+                        const iframe = document.getElementById('dashboardFrame');
+                        iframe.src = links[currentIndex].url;
+                        currentIndex = (currentIndex + 1) % links.length;
+                    }
+                }
+
+                updateIframe();
+                //console.log("Iframe updated!");
+                setInterval(updateIframe, refreshTime);
+            } catch (error) {
+                console.error('Failed to load dashboard data:', error);
+            }
+        }
+
+        loadDashboard();
+    </script>
+
+</body>
+</html>

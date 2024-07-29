@@ -1,0 +1,35 @@
+{
+  "name": "sisense-dashboards",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "description": "SisenseDashboards",
+  "author": {
+    "name": "Tucker Styles"
+  },
+  "bin": "app.js",
+  "pkg": {
+    "scripts": "app.js",
+    "assets": [
+      "public/**/*",
+      "dashboards.yaml"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.0",
+    "debug": "^2.2.0",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "morgan": "^1.7.0",
+    "pug": "^2.0.0-beta6",
+    "serve-favicon": "^2.3.0",
+    "yaml": "^2.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  },
+  "eslintConfig": {}
+}

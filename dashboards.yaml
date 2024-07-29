@@ -1,0 +1,30 @@
+idle_report:
+  refresh: 60000
+  links:
+    - url: https://flyguys.sisensepoc.com/app/main/dashboards/665670a879fa94004123165a?embed=true&r=false&t=true&theme=6679bff079fa940041232ac5
+    - url: https://flyguys.sisensepoc.com/app/main/dashboards/663e7dc479fa9400412309ee?embed=true&r=false&t=true&theme=6679bff079fa940041232ac5
+    - url: https://flyguys.sisensepoc.com/app/main/dashboards/663e813f79fa940041230a09?embed=true&r=false&t=true&theme=6679bff079fa940041232ac5
+mission_coordination:
+  refresh: 60000
+  links:
+    - url: "
+        https://flyguys.sisensepoc.com/app/main/dashboards/66758eb379fa9400412328\
+        33?embed=true&r=false&t=true&theme=6679bff079fa940041232ac5"
+mission_summary:
+  refresh: 60000
+  links:
+    - url: "
+        https://flyguys.sisensepoc.com/app/main/dashboards/6674987e79fa9400412325\
+        f1?embed=true&r=false&t=true&theme=6679bff079fa940041232ac5"
+pilot_sourcing:
+  refresh: 60000
+  links:
+    - url: "
+        https://flyguys.sisensepoc.com/app/main/dashboards/667c868679fa940041232d\
+        de?embed=true&r=false&t=true&theme=6679bff079fa940041232ac5"
+qaqc:
+  refresh: 60000
+  links:
+    - url: "
+        https://flyguys.sisensepoc.com/app/main/dashboards/667dcb6479fa9400412331\
+        78?embed=true&r=false&t=true&theme=6679bff079fa940041232ac5"

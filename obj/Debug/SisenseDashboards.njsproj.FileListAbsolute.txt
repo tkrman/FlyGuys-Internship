@@ -1,0 +1,3 @@
+C:\Users\Tucker\source\repos\SisenseDashboards\SisenseDashboards\obj\Debug\SisenseDashboards.njsproj.AssemblyReference.cache
+C:\Users\Tucker\source\repos\SisenseDashboards\SisenseDashboards\obj\Debug\SisenseDashboards.njsproj.CoreCompileInputs.cache
+C:\Users\Tucker\source\repos\SisenseDashboards\SisenseDashboards\bin\Microsoft.NodejsTools.WebRole.dll
